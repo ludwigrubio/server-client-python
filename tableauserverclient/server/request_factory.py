@@ -34,6 +34,7 @@ def _add_multipart(parts: Dict) -> Tuple[Any, str]:
         mime_multipart_parts.append(multipart_part)
     xml_request, content_type = encode_multipart_formdata(mime_multipart_parts)
     content_type = "".join(("multipart/mixed",) + content_type.partition(";")[1:])
+    print(content_type)
     return xml_request, content_type
 
 
