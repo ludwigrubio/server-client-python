@@ -48,8 +48,8 @@ from typing import (
 
 io_types = (io.BytesIO, io.BufferedReader)
 
-# The maximum size of a file that can be published in a single request is 64MB
-FILESIZE_LIMIT = 1024 * 1024 * 64  # 64MB
+# The maximum size of a file that can be published in a single request is 512 KB
+FILESIZE_LIMIT = 512
 
 ALLOWED_FILE_EXTENSIONS = ["tds", "tdsx", "tde", "hyper", "parquet"]
 
